@@ -1,0 +1,89 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsl(0,0%,100%);
+}
+.bill{
+    width: 45%;
+    margin: 2%;
+}
+#bill{
+    font-size: x-large;
+    width: 100%;
+    border-style: hidden;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+#people{
+    font-size: x-large;
+    width: 100%;
+    border-style: hidden;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+.tip-btns{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tip-btns > button{
+    width: 30%;
+    margin: 0 2% 2% 0;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 4px;
+    color: hsl(0,0%,100%);
+    padding: 2%;
+    font-weight: 700;
+}
+.tip-btns > button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.amount{
+    width: 50%;
+    margin: 2%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+.container{
+    width: 90%;
+    margin: 2%;
+}
+.tip-amount{
+    display: flex;
+}
+.tip-amount > div > h2{
+    color: hsl(0,0%,100%);
+}
+.tip-amount > div > p{
+    color: hsl(184, 14%, 56%);
+}
+.tip-amount > h1{
+    margin-left: auto;
+    color: hsl(184, 14%, 56%);
+}
+#reset{
+    width: 100%;
+    margin: 0 2% 2% 0;
+    background-color: hsl(184, 14%, 56%);
+    border: none;
+    border-radius: 4px;
+    color: hsl(183, 100%, 15%);
+    font-size: larger;
+    font-weight: 700;
+    padding: 2%;
+}
+#error{
+    color: red;
+    width: fit-content;
+    padding-top: 2%;
+    font-size: larger;
+    margin: auto;
+}

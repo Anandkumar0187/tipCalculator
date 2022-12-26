@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="bill">
+            <h3>Bill</h3>
+            <input type="text" inputmode="numeric" placeholder="$" id="bill">
+            <h3>Select Tip %</h3>
+            <div class="tip-btns">
+                <button onclick="func(5)">5%</button>
+                <button onclick="func(10)">10%</button>
+                <button onclick="func(15)">15%</button>
+                <button onclick="func(25)">25%</button>
+                <button onclick="func(50)">50%</button>
+                <button>Custom</button>
+            </div>
+            <h3>Number of People</h3>
+            <input type="text" inputmode="numeric" placeholder="" id="people" >
+        </div>
+        <div class="amount">
+            <div class="container">
+                <div class="tip-amount">
+                    <div>
+                        <h2>Tip Amount</h2>
+                        <p>/person</p>
+                    </div>
+                    <h1 id="tip">$ 0.00</h1>
+                </div>
+                <div class="tip-amount">
+                    <div>
+                        <h2>Total Amount</h2>
+                        <p>/person</p>
+                    </div>
+                    <h1 id="total">$ 0.00</h1>
+                </div>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <p id="error"></p>
+</body>
+</html>
