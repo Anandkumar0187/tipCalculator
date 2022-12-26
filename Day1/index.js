@@ -18,7 +18,7 @@ function func(tipPercent){
     else{
         let tipAmount = (bill.value * tipPercent / 100) / people.value;
         tip.innerHTML = `$ ${tipAmount.toFixed(2)}`;
-        let totalAmount = parseFloat(bill.value) + parseFloat(tipAmount);
+        let totalAmount = parseFloat(bill.value) + parseFloat(tipAmount) * people.value;
         total.innerHTML = `$ ${totalAmount.toFixed(2)}`;
         error.innerHTML = ''
     }
